@@ -35,7 +35,9 @@ def main(argv):
     t = tripit.TripIt(oauth_credential, api_url = api_url)
     takke = t.get_access_token()
     
+    print("Pass the following 5 arguments to co2.py, example.py or others:")
     print(" ".join([api_url, consumer_key, consumer_secret, "%(oauth_token)s %(oauth_token_secret)s" % takke]))
+    print("Possibly best to create a co2.sh?")
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))
