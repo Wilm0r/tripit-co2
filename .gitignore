@@ -1,0 +1,5 @@
+*.pyc
+co2-cache.db
+co2-real.csv
+co2.csv
+flights.xml
