@@ -18,7 +18,9 @@ Anyway, brief instructions:
 `login.sh` helps you with getting OAuth credentials. `co2.sh` will
 download all your flight data and dump it into a file named `co2.csv`.
 This is a very raw dump, it's not even sorted. Lots of info is barely
-parsed.
+parsed. Likely it'll contain some of your contacts' trips as well (even
+though the script isn't requesting them). See the source code, there's a
+commented out check to filter those out.
 
 Pay attention in particular to parsing of flight class data, I've added
 some heuristics to convert BA terminology to standard terms (and the
